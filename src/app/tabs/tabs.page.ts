@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private appService:AppService) {}
+
+  ngOnInit() { 
+    this.appService.abrirExtrato().subscribe( res => {
+      console.log(res);      
+    })
+  }
 
 }
