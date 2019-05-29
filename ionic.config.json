@@ -1,5 +1,7 @@
 {
   "name": "futgols",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

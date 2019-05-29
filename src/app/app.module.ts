@@ -13,7 +13,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpConfigInterceptor } from 'src/interceptor/interceptor';
 
 
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

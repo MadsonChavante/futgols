@@ -12,8 +12,8 @@ export class AppService {
 
   constructor(public http: HttpClient) {}
 
-  public abrirExtrato() {
-    var url = `${API_CONFIG.baseUrl}/competitions/${API_CONFIG.idCompeticao}/standings?standingType=HOME`;
+  public getClassificacao() {
+    var url = `${API_CONFIG.baseUrl}/competitions/${API_CONFIG.idCompeticao}/standings`;
     return this.http.get(url);
   }
 }
