@@ -2,3 +2,10 @@ ion-skeleton-text{
   height: 40px;
   border-radius:10px; 
 }
+ion-toolbar {
+  --opacity: 0.89;
+  }
+  #cab{
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+  }

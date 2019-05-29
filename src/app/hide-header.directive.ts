@@ -18,7 +18,6 @@ export class HideHeaderDirective {
   }
 
   ngOnInit(){ 
-    console.log(this.renderer);
     if(this.renderer){
       this.headerHeight = this.header.clientHeight;
       this.renderer.setElementStyle(this.header.el, 'webkitTransition', 'top 700ms');
