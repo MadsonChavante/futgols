@@ -4,15 +4,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
-import { HideHeaderDirective } from '../hide-header.directive';
+import { HideHeaderModule } from '../hide-header/hide-header.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    HideHeaderModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
-  declarations: [Tab1Page,HideHeaderDirective]
+  declarations: [Tab1Page]
 })
 export class Tab1PageModule {}

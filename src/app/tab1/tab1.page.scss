@@ -5,6 +5,14 @@ ion-skeleton-text{
 ion-toolbar {
   --opacity: 0.89;
   }
+  ion-item{
+    --border-radius:20px;
+    --border-color: rgb(159, 255, 115);
+    --border-width:3px;
+    --border-style: '';
+    --min-height:100px;
+    
+  }
   #cab{
     --background: rgba(0,0,0,0);
     --border-color: rgba(0,0,0,0);

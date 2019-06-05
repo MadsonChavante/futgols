@@ -1,9 +1,27 @@
-<ion-header>
+<ion-header no-border #head>
   <ion-toolbar>
-    <ion-title>
-      Tab Two
+    <ion-title style="font-weight: bold;">
+      Tabela
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content fullscreen hide-header [header]="head" scroll-events='true' id="scroll-content">
+  
+      <ion-list padding *ngFor="let grupo of grupos" lines='none'>
+          <ion-list-header >
+            <ion-label color="medium" style="font-weight: bold">{{grupo[0]}}</ion-label>
+          </ion-list-header>
+          <ion-item margin-top  *ngFor="let item of grupo[1]; let i= index">
+              <ion-thumbnail slot="start">
+                  <img height="auto" width="40px" [src]="'../../assets/escudos/'+item.homeTeam.id+'.png'">
+                </ion-thumbnail>
+                <ion-thumbnail slot="end">
+                    <img height="auto" width="40px" [src]="'../../assets/escudos/'+item.awayTeam.id+'.png'">
+                  </ion-thumbnail>
+              
+          </ion-item>
+        </ion-list>
+
+  
+</ion-content>

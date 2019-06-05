@@ -1,1 +1,12 @@
 
+#futgols{
+    width: 100%;
+    height: 150px;
+    background-color: #a0e883;
+    border-radius: 10px;
+
+    background-image: url("../../assets/bola.png"); 
+    background-position: right bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 130px ; /* Resize the background image to cover the entire container */
+}
