@@ -30,7 +30,7 @@ export class Tab2Page {
 
   getMatchs(scroll = false){
     this.appService.getMatchs(this.currentMatchday).subscribe(res => {
-
+      console.log(res);
       this.grupos = this.groupBy(res['matches'], "utcDate");
       this.grupos = Object.entries(this.grupos);
       

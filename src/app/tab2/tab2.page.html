@@ -1,6 +1,6 @@
 <ion-header no-border #head>
   <ion-toolbar>
-    <ion-title style="font-weight: bold;">
+    <ion-title style="font-family: natasha">
       Tabela
     </ion-title>
   </ion-toolbar>
@@ -11,58 +11,58 @@
   <!-- Default Segment -->
   <ion-segment id="segment" scrollable="true" mode="ios" (ionChange)="changeSegment($event)" [value]="currentMatchday">
     <ion-segment-button class="sg" value="1">
-      <ion-label style="font-weight: bold;">1</ion-label>
+      <ion-label style="font-family: natasha">1</ion-label>
     </ion-segment-button>
     <ion-segment-button value="2">
-      <ion-label style="font-weight: bold;">2</ion-label>
+      <ion-label style="font-family: natasha">2</ion-label>
     </ion-segment-button>
     <ion-segment-button value="3">
-      <ion-label style="font-weight: bold;">3</ion-label>
+      <ion-label style="font-family: natasha">3</ion-label>
     </ion-segment-button>
     <ion-segment-button value="4">
-      <ion-label style="font-weight: bold;">4</ion-label>
+      <ion-label style="font-family: natasha">4</ion-label>
     </ion-segment-button>
     <ion-segment-button value="5">
-      <ion-label style="font-weight: bold;">5</ion-label>
+      <ion-label style="font-family: natasha">5</ion-label>
     </ion-segment-button>
     <ion-segment-button value="6">
-      <ion-label style="font-weight: bold;">6</ion-label>
+      <ion-label style="font-family: natasha">6</ion-label>
     </ion-segment-button>
     <ion-segment-button value="7">
-      <ion-label style="font-weight: bold;">7</ion-label>
+      <ion-label style="font-family: natasha">7</ion-label>
     </ion-segment-button>
     <ion-segment-button value="8">
-      <ion-label style="font-weight: bold;">8</ion-label>
+      <ion-label style="font-family: natasha">8</ion-label>
     </ion-segment-button>
     <ion-segment-button value="9">
-      <ion-label style="font-weight: bold;">9</ion-label>
+      <ion-label style="font-family: natasha">9</ion-label>
     </ion-segment-button>
     <ion-segment-button value="10">
-      <ion-label style="font-weight: bold;">10</ion-label>
+      <ion-label style="font-family: natasha">10</ion-label>
     </ion-segment-button>
     <ion-segment-button value="11">
-      <ion-label style="font-weight: bold;">11</ion-label>
+      <ion-label style="font-family: natasha">11</ion-label>
     </ion-segment-button>
     <ion-segment-button value="12">
-      <ion-label style="font-weight: bold;">12</ion-label>
+      <ion-label style="font-family: natasha">12</ion-label>
     </ion-segment-button>
     <ion-segment-button value="13">
-      <ion-label style="font-weight: bold;">13</ion-label>
+      <ion-label style="font-family: natasha">13</ion-label>
     </ion-segment-button>
     <ion-segment-button value="14">
-      <ion-label style="font-weight: bold;">14</ion-label>
+      <ion-label style="font-family: natasha">14</ion-label>
     </ion-segment-button>
     <ion-segment-button value="15">
-      <ion-label style="font-weight: bold;">15</ion-label>
+      <ion-label style="font-family: natasha">15</ion-label>
     </ion-segment-button>
     <ion-segment-button value="16">
-      <ion-label style="font-weight: bold;">16</ion-label>
+      <ion-label style="font-family: natasha">16</ion-label>
     </ion-segment-button>
     <ion-segment-button value="17">
-      <ion-label style="font-weight: bold;">17</ion-label>
+      <ion-label style="font-family: natasha">17</ion-label>
     </ion-segment-button>
     <ion-segment-button value="18">
-      <ion-label style="font-weight: bold;">18</ion-label>
+      <ion-label style="font-family: natasha">18</ion-label>
     </ion-segment-button>
   </ion-segment>
 
@@ -105,7 +105,7 @@
       <ion-thumbnail slot="start">
         <img height="auto" width="40px" [src]="'../../assets/escudos/'+item.homeTeam.id+'.svg'">
       </ion-thumbnail>
-      <div color="danger" style="text-align: center;width: 100%"><h3 color="danger">X</h3></div>
+      <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding: 10px"><h3 style="font-family: natasha;">{{item.score.fullTime.homeTeam}}</h3> <h5  style="font-family: natasha;color: #989aa2" >X</h5> <h3 style="font-family: natasha;">{{item.score.fullTime.awayTeam}}</h3></div>
       <ion-thumbnail slot="end">
         <img height="auto" width="40px" [src]="'../../assets/escudos/'+item.awayTeam.id+'.svg'">
       </ion-thumbnail>
