@@ -6,4 +6,4 @@
   Fut Gols
 </h3>
 
-<p align="center">Código do segundo módulo do Bootcamp GoStack 🎓</p>
+<p align="center">App feito para acompnhar o campeonato brasileiro de futebol serie A.</p>
